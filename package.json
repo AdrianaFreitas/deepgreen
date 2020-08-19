@@ -1,7 +1,7 @@
 {
-  "name": "muster-homepage",
+  "name": "deepgreen-homepage",
   "version": "1.0.0",
-  "description": "homepage for musterventures.com",
+  "description": "homepage for deepgreenvc.com",
   "scripts": {
     "start": "harp-scripts start",
     "watch": "harp-scripts watch",

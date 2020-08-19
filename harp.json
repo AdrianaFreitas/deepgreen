@@ -1,17 +1,17 @@
 {
 	"globals": {
 		"site": {
-			"title": "Muster Ventures",
-			"description": "the best minds and capital for tech-driven companies",
-			"root": "https://muster.vc",
-			"email": "hello@muster.vc",
+			"title": "Deep Green",
+			"description": "The Path to Impact for Data Driven Companies",
+			"root": "https://deepgreen.vc",
+			"email": "hello@deepgreen.vc",
 			"phone": "+34628210638",
-			"analytics": "UA-112026228-1",
-			"facebook": "mustervc",
+			"analytics": null,
+			"facebook": null,
 			"instagram": null,
-			"twitter": "mustervc",
+			"twitter": "deepgreenvc",
 			"whatsapp": null,
-			"linkedin": "musterventures",
+			"linkedin": null,
 			"github": null
 		}
 	}
