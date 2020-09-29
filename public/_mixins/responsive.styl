@@ -1,4 +1,5 @@
 breakpoints = {
+	xs: 0,
 	md: 48rem,
 	lg: 80rem,
 }
@@ -10,16 +11,6 @@ above(breakpoint)
 			{block}
 	else
 		{block}
-
-below(breakpoint)
-	@media only screen and (max-width: (breakpoints[breakpoint] - 1px))
-		if block
-			{block}
-
-between(breakpoint_1, breakpoint_2)
-	@media only screen and (min-width: breakpoints[breakpoint_1]) and (max-width: (breakpoints[breakpoint_2] - 1px))
-		if block
-			{block}
 
 .container
 	margin-left: auto
@@ -41,9 +32,6 @@ between(breakpoint_1, breakpoint_2)
 	align-items flex-start
 	margin-left: (2.5rem * -0.5)
 	margin-right: (2.5rem * -0.5)
-
-.g-xs-12
-	width: 100%
 
 
 $col-paddings

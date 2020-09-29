@@ -1,0 +1,34 @@
+mixin ContactFormInput({ id, name, label, type = 'text', textarea = false})
+	-const tag = textarea ? 'textarea' : 'input'
+	-const _type = tag === 'input' ? type : null
+	-const _id = id || name
+	-const rows = tag === 'textarea' ? '1' : null
+	.ContactFormInput
+		#{tag}.ContactFormInput-input(id=_id name=name rows=rows type=_type placeholder=' ' required)
+		label.ContactFormInput-label(for=name)=(label || name)
+
+.ContactForm
+	#mc_embed_signup
+		form#mc-embedded-subscribe-form.ContactForm-form(action='https://deepgreen.us2.list-manage.com/subscribe/post?u=1eb64efa5f9bb4121898816f0&id=c8f8c40883' method='post' name='mc-embedded-subscribe-form' target='_blank' novalidate='')
+			#mc_embed_signup_scroll
+			.g-row
+				.g-xs-12.g-md-8.g-lg-4
+					.ContactFormInput
+						input#mce-EMAIL.ContactFormInput-input(type='email' value='' name='EMAIL' placeholder=' ' required)
+						label.ContactFormInput-label(for='mce-EMAIL') email
+					// real people should not fill this in and expect good things - do not remove this or risk form bot signups
+					div(style='position: absolute; left: -5000px;' aria-hidden='true')
+						input(type='text' name='b_1eb64efa5f9bb4121898816f0_c8f8c40883' tabindex='-1' value='')
+				.g-xs-12.g-md-4.g-lg-4
+					button#mc-embedded-subscribe.ghost-button(type='submit' name='subscribe')
+						span send
+						.icon-container
+							+FeatherIcon('arrow-right')
+			#mce-responses
+				#mce-error-response.response(style='display:none')
+				#mce-success-response.response(style='display:none')
+
+	script(type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
+	script(type='text/javascript').
+		(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);
+	div
